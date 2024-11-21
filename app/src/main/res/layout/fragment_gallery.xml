@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black"
+    >
+
+    <TextView
+        android:id="@+id/tvAttendanceTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ATTENDANCE"
+        android:textAppearance="?attr/textAppearanceHeadline5"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/att_bg"
+        android:padding="16dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S.No"
+                    android:textColor="@color/white"
+                    android:background="@drawable/att_head_bg"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROOM NO"
+                    android:textColor="@color/white"
+                    android:background="@drawable/att_head_bg"                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STUDENT NAME"
+                    android:textColor="@color/white"
+                    android:background="@drawable/att_head_bg"                    android:layout_margin="3dp"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FATHER NAME"
+                    android:textColor="@color/white"
+                    android:background="@drawable/att_head_bg"                    android:layout_margin="3dp"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MOBILE NO"
+                    android:layout_margin="3dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/att_head_bg"                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRESENCE"
+                    android:textColor="@color/white"
+                    android:background="@drawable/att_head_bg"                    android:layout_margin="3dp"
+                    android:padding="8dp" />
+            </TableRow>
+
+            <TableRow android:background="#212223"
+                android:layout_marginTop="8dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="235"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SANJAY MISHRA"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SAMAR MISHRA"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9545397855"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/status1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    android:padding="8dp"
+                    android:textColor="#00FF00" />
+            </TableRow>
+
+            <TableRow android:background="#212223"
+                android:layout_marginTop="8dp">
+                <CheckBox
+                    android:id="@+id/checkbox2"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="236"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YASH SHARMA"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SURESH SHARMA"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9534264154"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="L"
+                    android:padding="8dp"
+                    android:textColor="#FF0000" />
+            </TableRow>
+
+            <TableRow android:background="#212223"
+                android:layout_marginTop="8dp">
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="237"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUJAY PANDEY"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VISHNU PANDEY"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9876098881"
+                    android:textColor="@color/white"
+                    android:padding="8dp" />
+                <TextView
+                    android:id="@+id/status3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    android:padding="8dp"
+                    android:textColor="#00FF00" />
+            </TableRow>
+
+        </TableLayout>
+    </HorizontalScrollView>
+</LinearLayout>

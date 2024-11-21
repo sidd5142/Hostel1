@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hostel1.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_attendance"
+            app:destination="@id/nav_attendance" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_support"
+            app:destination="@id/nav_support" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.hostel1.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.hostel1.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.hostel1.ui.Support.Support_Home"
+        android:label="@string/menu_support"
+        tools:layout="@layout/fragment_support__home"
+        />
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.example.hostel1.ui.attendance.Attend_Home"
+        android:label="@string/menu_attendance"
+        tools:layout="@layout/fragment_attend__home" >
+        <action
+            android:id="@+id/action_nav_attendance_to_datePicker"
+            app:destination="@id/datePicker" />
+        <action
+            android:id="@+id/action_nav_attendance_to_absentDate"
+            app:destination="@id/absentDate" />
+    </fragment>
+    <fragment
+        android:id="@+id/datePicker"
+        android:name="com.example.hostel1.ui.attendance.DatePicker"
+        android:label="DatePicker"
+        tools:layout="@layout/fragment_date_picker">
+        >
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.hostel1.ui.Profile.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/attend_Marking"
+        android:name="com.example.hostel1.ui.attendance.Attend_Marking"
+        android:label="fragment_attend__marking"
+        tools:layout="@layout/fragment_attend__marking" />
+    <fragment
+        android:id="@+id/absentDate"
+        android:name="com.example.hostel1.ui.attendance.AbsentDate"
+        android:label="AbsentDate" />
+
+
+</navigation>

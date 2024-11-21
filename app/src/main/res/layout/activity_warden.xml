@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".ui.Support.Warden">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#161414"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HOSTEL WARDENS"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/att_bg"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <!-- Boys Hostel Wardens -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BOYS HOSTEL WARDENS"
+                android:textSize="18dp"
+                android:layout_marginBottom="10dp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:background="@drawable/att_head_bg"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <TableLayout
+                    android:id="@+id/boysTableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Index"
+                            android:textSize="16sp"
+                            android:gravity="center"                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hostel Name"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:layout_margin="3dp"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Year"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:layout_margin="3dp"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOBILE NO"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_margin="3dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:padding="8dp" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <!-- Girls Hostel Wardens -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GIRLS HOSTEL WARDENS"
+                android:textSize="18sp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/att_head_bg"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginTop="16dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/girlsTableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1">
+
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Index"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Name"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hostel Name"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:layout_margin="3dp"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Year"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:layout_margin="3dp"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MOBILE NO"
+                            android:gravity="center"
+                            android:textSize="16sp"
+                            android:layout_margin="3dp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/att_head_bg"
+                            android:padding="8dp" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

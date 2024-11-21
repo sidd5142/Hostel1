@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvLeaveTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="LEAVE"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:textStyle="bold"
+            android:background="@drawable/att_bg"
+            android:padding="16dp"
+            android:textColor="#D9D9D9" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NAME"
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="SUHAS ARORA" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ROOM NO."
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etRoomNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="234" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NO. OF DAYS"
+                android:padding="8dp"
+                android:background="@drawable/att_head_bg"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etNoOfDays"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DAY OUT"
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etDayOut"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="17/04/2024" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DAY IN"
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etDayIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="21/04/2024" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="REASON"
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="MEDICAL EMERGENCY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="STUDENT MOBILE NO"
+                android:padding="8dp"
+                android:background="@drawable/att_head_bg"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etStudentMobileNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="987555467" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PARENTS MOBILE NO"
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etParentsMobileNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="9435278657" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LEAVE ADD"
+                android:padding="8dp"
+                android:background="@drawable/att_head_bg"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etLeaveAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="LUCKNOW" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HOSTEL"
+                android:background="@drawable/att_head_bg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/etHostel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/leave_bg"
+                android:padding="8dp"
+                android:text="CHANDRAGUPTA" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="SUBMIT"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:backgroundTint="#25EF46"
+            android:background="@drawable/btn_bg"
+            android:textColor="#FFFFFF"
+            android:padding="16dp" />
+    </LinearLayout>
+</ScrollView>

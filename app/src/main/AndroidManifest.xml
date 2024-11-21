@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/dormlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dormlogo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hostel1"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.attendance.Absentees"
+            android:exported="true"
+            android:label="@string/title_activity_absentees"
+             />
+        <activity
+            android:name=".ui.attendance.Absent_list"
+            android:exported="false" />
+        <activity
+            android:name=".ui.attendance.Attend_Home"
+            android:exported="false" />
+        <activity
+            android:name=".Mess.MessActivity"
+            android:exported="false" />
+        <activity
+            android:name=".register.Registration"
+            android:exported="false" />
+        <activity
+            android:name=".Complaint.RegisterComp.Status.Submission"
+            android:exported="false" />
+        <activity
+            android:name=".Complaint.RegisterComp.Status.status"
+            android:exported="false" />
+        <activity
+            android:name=".Complaint.RegisterComp.item_image"
+            android:exported="false" />
+        <activity
+            android:name=".Complaint.RegisterComp.Registration"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Support.Sports"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Support.Rectors"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Support.HODs"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Support.Warden"
+            android:exported="false" />
+        <activity
+            android:name=".register.Login"
+            android:exported="false" />
+
+        <activity
+            android:name=".Council.Council_home"
+            android:exported="false" />
+        <activity
+            android:name=".Integration.Test1"
+            android:exported="false" />
+        <activity
+            android:name=".Attendance.AttendanceMarking"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavHome"
+            android:exported="false"
+            android:label="@string/title_activity_nav_home"
+            android:theme="@style/Theme.Hostel1.NoActionBar" />
+
+        <activity
+            android:name=".HomeScreen.Home"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

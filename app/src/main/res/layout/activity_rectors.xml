@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@color/black"
+    tools:context=".ui.Support.Rectors">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#161414"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RECTOR"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/att_bg"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TableLayout
+                    android:id="@+id/boysTableLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="1"
+                    android:layout_marginBottom="8dp"
+                    android:padding="8dp"
+                    android:background="@android:color/black">
+
+                    <TableRow>
+                        <TextView
+                            android:text="S.NO"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/att_head_bg"/>
+                        <TextView
+                            android:text="Name"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/att_head_bg"/>
+                        <TextView
+                            android:text="Hostel Name"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/att_head_bg"/>
+                        <TextView
+                            android:text="Year"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/att_head_bg"/>
+                        <TextView
+                            android:text="Mobile Number"
+                            android:padding="8dp"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/att_head_bg"/>
+                    </TableRow>
+
+                    <!-- Data will be dynamically added here -->
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

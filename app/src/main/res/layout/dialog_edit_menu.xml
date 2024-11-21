@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_breakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Breakfast"
+        android:drawableLeft="@drawable/baseline_emoji_food_beverage_24"
+        android:drawablePadding="40dp"
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/white"
+        android:lines="3"
+        android:maxLines="5"
+        android:gravity="center_vertical"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/et_lunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lunch"
+        android:textColorHint="@color/white"
+        android:inputType="textMultiLine"
+        android:drawablePadding="40dp"
+        android:drawableLeft="@drawable/baseline_food_bank_24"
+        android:lines="3"
+        android:maxLines="5"
+        android:gravity="center_vertical"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/et_snacks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Snacks"
+        android:inputType="textMultiLine"
+        android:drawablePadding="40dp"
+        android:drawableLeft="@drawable/baseline_fastfood_24"
+        android:textColorHint="@color/white"
+        android:lines="3"
+        android:maxLines="5"
+        android:gravity="center_vertical"
+        android:padding="8dp"/>
+
+    <EditText
+        android:id="@+id/et_dinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dinner"
+        android:inputType="textMultiLine"
+        android:drawablePadding="40dp"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_food_bank_24"
+        android:lines="3"
+        android:maxLines="5"
+        android:gravity="center_vertical"
+        android:padding="8dp"/>
+
+</LinearLayout>
