@@ -196,10 +196,10 @@ class Login : AppCompatActivity() {
             val password = passwordEditText.text.toString()
 
             val data = mapOf("identifier" to email, "password" to password)
-//            val intent = Intent(this@Login, NavHome::class.java)
-//            startActivity(intent)
-//            finish()
-            makePostRequest(data)
+            val intent = Intent(this@Login, NavHome::class.java)
+            startActivity(intent)
+            finish()
+//            makePostRequest(data)
         }
     }
 
