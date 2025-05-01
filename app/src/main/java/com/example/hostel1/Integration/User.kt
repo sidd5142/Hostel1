@@ -1,26 +1,27 @@
+// Corrected Complain.kt
 package com.example.hostel1.Integration
 
-data class Student(
-    val first_name: String,
-    val last_name: String,
-    val f_name: String,
-    val contact: String,
-    val room_no: String
-)
-
-data class UserData(
-    val id: Int,
-    val student: Student,
-    val atd_status: String
-)
-
 data class Complain(
-    val date: String,
-    val time: String,
+    val id: Int,
     val type: String,
-    val mailId: String,
-    val roomNo: String,
     val problem: String,
-    val description: String
+    val created_date : String,
+    val created_time : String,
+    val description: String,
+    val approval_status: Boolean,
+    val student: Student
 )
 
+data class Student(
+    val id: Int,
+    val email: String,
+    val std_name: String,
+    val dept: String,
+    val year: String,
+    val u_rollno: String,
+    val std_contact: String,
+    val f_contact: String,
+    val m_contact: String,
+    val room_altd: String,
+    val seater_altd: String
+)

@@ -219,7 +219,7 @@ class Attend_Marking : Fragment() {
         call.enqueue(object : Callback<Unit> {
             override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
                 if (response.isSuccessful) {
-                    Log.d("Attend", "Attendance Sent Successfully : ${response.message()}")
+//                    Log.d("Attend", "Attendance Sent Successfully : ${response.message()}")
                     startActivity(Intent(requireContext(), Absent_list::class.java))
                 } else {
                     Log.e("AttendFault", "Failed to send attendance. Error code: ${response.code()}")

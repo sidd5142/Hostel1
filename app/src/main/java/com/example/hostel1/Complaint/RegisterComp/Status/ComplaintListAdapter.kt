@@ -1,5 +1,6 @@
 package com.example.hostel1.Complaint.RegisterComp.Status
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,10 +10,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.hostel1.Integration.Complain
 import com.example.hostel1.R
 
-class ComplaintListAdapter(private val complaints: List<Complain>) : RecyclerView.Adapter<ComplaintListAdapter.ComplaintViewHolder>() {
+class ComplaintListAdapter(private val complaints: List<Complain>) :
+    RecyclerView.Adapter<ComplaintListAdapter.ComplaintViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ComplaintViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_complaint, parent, false)
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_complaint, parent, false)
         return ComplaintViewHolder(view)
     }
 
@@ -24,6 +27,7 @@ class ComplaintListAdapter(private val complaints: List<Complain>) : RecyclerVie
     override fun getItemCount(): Int = complaints.size
 
     class ComplaintViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val textViewName: TextView = itemView.findViewById(R.id.textViewName)
         private val textViewDate: TextView = itemView.findViewById(R.id.textViewDate)
         private val textViewTime: TextView = itemView.findViewById(R.id.textViewTime)
         private val textViewType: TextView = itemView.findViewById(R.id.textViewType)
@@ -34,21 +38,23 @@ class ComplaintListAdapter(private val complaints: List<Complain>) : RecyclerVie
         private val buttonPending: Button = itemView.findViewById(R.id.buttonPending)
         private val buttonEdit: Button = itemView.findViewById(R.id.buttonEdit)
 
+        @SuppressLint("SetTextI18n")
         fun bind(complaint: Complain) {
-            textViewDate.text = "Date: ${complaint.date}"
-            textViewTime.text = "Time: ${complaint.time}"
+            textViewName.text = "Name: ${complaint.student.std_name}"
+            textViewDate.text = "Date: ${complaint.created_date}" // If date/time is not in JSON, set default or hide
+            textViewTime.text = "Time: ${complaint.created_time}"
             textViewType.text = "Type: ${complaint.type}"
-            textViewRoomNo.text = "Room No: ${complaint.roomNo}"
+            textViewRoomNo.text = "Room No: ${complaint.student.room_altd}"
             textViewProblem.text = "Problem: ${complaint.problem}"
             textViewDescription.text = "Description: ${complaint.description}"
-            textViewMailId.text = complaint.mailId
+            textViewMailId.text = complaint.student.email
 
             buttonPending.setOnClickListener {
-                // Handle pending button click
+                // TODO: Handle pending button click
             }
 
             buttonEdit.setOnClickListener {
-                // Handle edit button click
+                // TODO: Handle edit button click
             }
         }
     }

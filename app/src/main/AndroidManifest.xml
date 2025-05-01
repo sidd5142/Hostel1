@@ -26,7 +26,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.attendance.Attend_Home"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".Mess.MessActivity"
             android:exported="false" />

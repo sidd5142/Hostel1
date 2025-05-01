@@ -100,17 +100,17 @@ class Absentees : AppCompatActivity() {
                 )
             }
 
-//            val checkBox = CheckBox(this).apply {
-//                tag = userData.id // Assuming userData.id is an Int and unique for each student
-//                setOnCheckedChangeListener { _, isChecked ->
-//                    if (isChecked) {
-//                        presentCount++
-//                    } else {
-//                        presentCount--
-//                    }
+            val checkBox = CheckBox(this).apply {
+                tag = userData.id // Assuming userData.id is an Int and unique for each student
+                setOnCheckedChangeListener { _, isChecked ->
+                    if (isChecked) {
+                        presentCount++
+                    } else {
+                        presentCount--
+                    }
 //                    updatePresentCount()
-//                }
-//            }
+                }
+            }
 
 //            checkBoxList.add(checkBox)
 

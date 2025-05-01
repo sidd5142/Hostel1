@@ -88,6 +88,8 @@ dependencies {
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation ("androidx.room:room-ktx:2.6.1")
+    implementation ("com.squareup.okhttp3:logging-interceptor:4.12.0") // or latest
+
 //    implementation ("com.sun.mail:android-mail:1.6.7")
 //    implementation ("com.sun.mail:android-activation:1.6.7")
 

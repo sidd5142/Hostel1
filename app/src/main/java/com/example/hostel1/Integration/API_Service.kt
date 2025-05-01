@@ -7,6 +7,8 @@ import com.example.hostel1.Complaint.RegisterComp.Status.Complaint
 import retrofit2.Call
 import retrofit2.Response
 import retrofit2.http.Body
+import retrofit2.http.Field
+import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Headers
@@ -19,12 +21,19 @@ interface API_Service {
     @GET("dorm/users/")
     suspend fun getUsers(): Response<List<User>>
 
-    @POST("attendence/add-grievance/")
+    @POST("attendance/add-grievance/")
     fun makePostComplaint(@Body data: Complaint): Call<Unit>
 
 
+//    @POST("dorm/login/")
+//    fun makePostRequest(@Body data: Map<String, String>): Call<Unit>
+    @FormUrlEncoded
     @POST("dorm/login/")
-    fun makePostRequest(@Body data: Map<String, String>): Call<Unit>
+    fun makePostRequest(
+       @Field("identifier") email: String,
+       @Field("password") password: String
+    ): Call<Unit>
+
 
 
     @POST("dorm/users/")
@@ -41,6 +50,6 @@ interface API_Service {
      @GET("attendance/absenties/")
      fun getAbsent(@Query("date")date: String?): Call<List<User>>
 
-    @GET("dorm/complaints")
+    @GET("attendance/all-grievances/")
     fun getComplaint():Call<List<Complain>>
 }
